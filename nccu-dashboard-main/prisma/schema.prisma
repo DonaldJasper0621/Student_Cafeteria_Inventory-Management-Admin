@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Dish {
+  id          Int      @id
+  name        String   @db.VarChar(45)
+  ingredients String   @db.VarChar(45)
+  type        String   @db.VarChar(45)
+  image       String   @db.VarChar(225)
+  Order       Order[]
+  Rating      Rating[]
+}
+
+model Order {
+  User_studentId Int
+  Dish_id        Int
+  date           String @db.VarChar(45)
+  Dish           Dish   @relation(fields: [Dish_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_User_has_Dish_Dish1")
+  User           User   @relation(fields: [User_studentId], references: [studentId], onDelete: NoAction, onUpdate: NoAction, map: "fk_User_has_Dish_User")
+
+  @@id([User_studentId, Dish_id, date])
+  @@index([Dish_id], map: "fk_User_has_Dish_Dish1_idx")
+  @@index([User_studentId], map: "fk_User_has_Dish_User_idx")
+}
+
+model Rating {
+  User_studentId Int
+  Dish_id        Int
+  rating         Int
+  Dish           Dish @relation(fields: [Dish_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_User_has_Dish_Dish2")
+  User           User @relation(fields: [User_studentId], references: [studentId], onDelete: NoAction, onUpdate: NoAction, map: "fk_User_has_Dish_User1")
+
+  @@id([User_studentId, Dish_id])
+  @@index([Dish_id], map: "fk_User_has_Dish_Dish2_idx")
+  @@index([User_studentId], map: "fk_User_has_Dish_User1_idx")
+}
+
+model User {
+  studentId  Int      @id
+  Password   String   @db.VarChar(45)
+  gender     String   @db.VarChar(45)
+  occupation String   @db.VarChar(45)
+  Order      Order[]
+  Rating     Rating[]
+}
