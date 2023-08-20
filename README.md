@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 <p align="center">
-  <h2 align="center"> Student_Cafeteria_Inventory-Management-Admin </h2>
+  <h2 align="center"> NCCU_Student_Cafeteria_Inventory-Management-Admin </h2>
 </p>
 
 <p align="center">
