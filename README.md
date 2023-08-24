@@ -21,13 +21,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ---
 
-## 🌐 About the Project
+## About the Project
 
 This system aims to enhance the restaurant experience for both customers and staff by improving ingredient management, streamlining ordering processes, and providing valuable customer feedback channels.
 
 ---
 
-## 🚀 Features
+## Features
 
 ### Ingredient Management
 
