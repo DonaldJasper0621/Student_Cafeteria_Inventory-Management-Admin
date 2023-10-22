@@ -1,8 +1,8 @@
 # NCCU_Student_Cafeteria_Inventory-Management-Admin
 
 ## Live Demo
-- **Reservation evaluation (client):** [https://nccu-restaurant.vercel.app/](https://nccu-restaurant.vercel.app/)
-- **Inventory management:** [https://nccu-dashboard.vercel.app/](https://nccu-dashboard.vercel.app/)
+- **Reservation evaluation (client):** [https://nccu-restaurant.vercel.app/](https://rb.gy/detmq)
+- **Inventory management:** [https://nccu-dashboard.vercel.app/](https://rb.gy/7t1d3)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
