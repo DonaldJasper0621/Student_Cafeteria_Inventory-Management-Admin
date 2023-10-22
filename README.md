@@ -1,4 +1,4 @@
-# NCCU_Student_Cafeteria_Inventory-Management-Admin
+# Student_Cafeteria_Inventory-Management-Admin
 
 ## Live Demo
 - **Reservation evaluation (client):** [https://nccu-restaurant.vercel.app/](https://rb.gy/detmq)
